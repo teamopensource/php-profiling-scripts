@@ -44,6 +44,10 @@ Parameters:
     --type (default "accumulation")
     Type of diagram that we desire to generate
     
+### Types of Diagram
+
+* accumulation
+
 ### Notes
 
 Be aware, that the visualization of the diagrams can take solid amounts of time (a couple of minutes if a threshold is not given, e.g. 25000 (2.5 ms))

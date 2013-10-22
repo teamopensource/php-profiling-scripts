@@ -21,7 +21,7 @@ if not os.path.exists(args.o):
 files = glob.glob("/".join([args.i, "cachegrind.*"]))
 
 for filename in files:
-	if ".csv" not in filename:
+	if ".csv" not in filename and ".svg" not in filename:
 		inname = filename
 		outname = "/".join([args.o, inname.split("/").pop() + '.csv'])
 

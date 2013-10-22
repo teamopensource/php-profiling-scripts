@@ -1,0 +1,583 @@
+version: 1
+creator: xdebug 2.2.1
+cmd: /var/www/lib/javascript.php
+part: 1
+positions: line
+
+events: Time
+
+fl=php:internal
+fn=php::define
+27 7
+
+fl=php:internal
+fn=php::define
+30 0
+
+fl=php:internal
+fn=php::dirname
+25 3
+
+fl=php:internal
+fn=php::dirname
+59 3
+
+fl=php:internal
+fn=php::dirname
+59 0
+
+fl=php:internal
+fn=php::realpath
+69 4
+
+fl=php:internal
+fn=php::is_writable
+76 8
+
+fl=php:internal
+fn=php::defined
+110 1
+
+fl=php:internal
+fn=php::ini_set
+174 6
+
+fl=php:internal
+fn=php::defined
+179 0
+
+fl=php:internal
+fn=php::defined
+184 0
+
+fl=php:internal
+fn=php::define
+185 2
+
+fl=php:internal
+fn=php::defined
+189 0
+
+fl=php:internal
+fn=php::define
+190 2
+
+fl=php:internal
+fn=php::defined
+197 2
+
+fl=php:internal
+fn=php::define
+198 1
+
+fl=php:internal
+fn=php::defined
+205 0
+
+fl=php:internal
+fn=php::define
+206 0
+
+fl=php:internal
+fn=php::function_exists
+211 1
+
+fl=php:internal
+fn=php::function_exists
+211 0
+
+fl=php:internal
+fn=php::error_reporting
+212 2
+
+fl=php:internal
+fn=php::date_default_timezone_get
+213 53
+
+fl=php:internal
+fn=php::date_default_timezone_set
+213 7
+
+fl=php:internal
+fn=php::error_reporting
+214 3
+
+fl=php:internal
+fn=php::defined
+221 0
+
+fl=php:internal
+fn=php::define
+222 0
+
+fl=php:internal
+fn=php::defined
+224 1
+
+fl=php:internal
+fn=php::file_exists
+242 5
+
+fl=php:internal
+fn=php::defined
+261 1
+
+fl=php:internal
+fn=php::define
+262 0
+
+fl=php:internal
+fn=php::defined
+278 0
+
+fl=php:internal
+fn=php::define
+279 0
+
+fl=php:internal
+fn=php::umask
+290 1
+
+fl=php:internal
+fn=php::defined
+298 0
+
+fl=php:internal
+fn=php::defined
+299 1
+
+fl=php:internal
+fn=php::error_reporting
+304 2
+
+fl=php:internal
+fn=php::ini_set
+308 2
+
+fl=php:internal
+fn=php::ini_set
+309 1
+
+fl=/var/www/lib/configonlylib.php
+fn=require_once::/var/www/lib/configonlylib.php
+1 1
+
+fl=/var/www/lib/setup.php
+fn=require_once::/var/www/lib/setup.php
+1 964
+cfl=php:internal
+cfn=php::dirname
+calls=1 0 0
+59 3
+cfl=php:internal
+cfn=php::dirname
+calls=1 0 0
+59 0
+cfl=php:internal
+cfn=php::realpath
+calls=1 0 0
+69 4
+cfl=php:internal
+cfn=php::is_writable
+calls=1 0 0
+76 8
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+110 1
+cfl=php:internal
+cfn=php::ini_set
+calls=1 0 0
+174 6
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+179 0
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+184 0
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+185 2
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+189 0
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+190 2
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+197 2
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+198 1
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+205 0
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+206 0
+cfl=php:internal
+cfn=php::function_exists
+calls=1 0 0
+211 1
+cfl=php:internal
+cfn=php::function_exists
+calls=1 0 0
+211 0
+cfl=php:internal
+cfn=php::error_reporting
+calls=1 0 0
+212 2
+cfl=php:internal
+cfn=php::date_default_timezone_get
+calls=1 0 0
+213 53
+cfl=php:internal
+cfn=php::date_default_timezone_set
+calls=1 0 0
+213 7
+cfl=php:internal
+cfn=php::error_reporting
+calls=1 0 0
+214 3
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+221 0
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+222 0
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+224 1
+cfl=php:internal
+cfn=php::file_exists
+calls=1 0 0
+242 5
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+261 1
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+262 0
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+278 0
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+279 0
+cfl=php:internal
+cfn=php::umask
+calls=1 0 0
+290 1
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+298 0
+cfl=php:internal
+cfn=php::defined
+calls=1 0 0
+299 1
+cfl=php:internal
+cfn=php::error_reporting
+calls=1 0 0
+304 2
+cfl=php:internal
+cfn=php::ini_set
+calls=1 0 0
+308 2
+cfl=php:internal
+cfn=php::ini_set
+calls=1 0 0
+309 1
+cfl=/var/www/lib/configonlylib.php
+cfn=require_once::/var/www/lib/configonlylib.php
+calls=1 0 0
+316 1
+
+fl=/var/www/config.php
+fn=require::/var/www/config.php
+1 1579
+cfl=php:internal
+cfn=php::dirname
+calls=1 0 0
+25 3
+cfl=/var/www/lib/setup.php
+cfn=require_once::/var/www/lib/setup.php
+calls=1 0 0
+25 1096
+
+fl=/var/www/lib/jslib.php
+fn=require_once::/var/www/lib/jslib.php
+1 5
+
+fl=php:internal
+fn=php::stripos
+184 2
+
+fl=php:internal
+fn=php::preg_match
+196 14
+
+fl=/var/www/lib/configonlylib.php
+fn=min_get_slash_argument
+173 60
+cfl=php:internal
+cfn=php::stripos
+calls=1 0 0
+184 2
+cfl=php:internal
+cfn=php::preg_match
+calls=1 0 0
+196 14
+
+fl=php:internal
+fn=php::ltrim
+35 1
+
+fl=php:internal
+fn=php::substr_count
+36 1
+
+fl=php:internal
+fn=php::explode
+40 4
+
+fl=/var/www/lib/configonlylib.php
+fn=min_clean_param
+65 6
+
+fl=php:internal
+fn=php::preg_replace
+73 8
+
+fl=php:internal
+fn=php::preg_replace
+74 4
+
+fl=php:internal
+fn=php::preg_replace
+75 2
+
+fl=/var/www/lib/configonlylib.php
+fn=min_clean_param
+65 51
+cfl=php:internal
+cfn=php::preg_replace
+calls=1 0 0
+73 8
+cfl=php:internal
+cfn=php::preg_replace
+calls=1 0 0
+74 4
+cfl=php:internal
+cfn=php::preg_replace
+calls=1 0 0
+75 2
+
+fl=php:internal
+fn=php::explode
+51 2
+
+fl=php:internal
+fn=php::realpath
+53 7
+
+fl=php:internal
+fn=php::strpos
+62 0
+
+fl=php:internal
+fn=php::substr
+66 2
+
+fl=php:internal
+fn=php::implode
+78 1
+
+fl=php:internal
+fn=php::sha1
+78 6
+
+fl=php:internal
+fn=php::file_exists
+82 6
+
+fl=php:internal
+fn=php::filemtime
+86 6
+
+fl=php:internal
+fn=php::header
+85 3
+
+fl=php:internal
+fn=php::time
+86 1
+
+fl=php:internal
+fn=php::gmdate
+86 11
+
+fl=php:internal
+fn=php::header
+86 6
+
+fl=php:internal
+fn=php::header
+87 1
+
+fl=php:internal
+fn=php::header
+88 3
+
+fl=php:internal
+fn=php::header
+89 5
+
+fl=php:internal
+fn=php::gmdate
+91 10
+
+fl=php:internal
+fn=php::header
+91 4
+
+fl=/var/www/lib/jslib.php
+fn=js_send_unmodified
+83 174
+cfl=php:internal
+cfn=php::header
+calls=1 0 0
+85 3
+cfl=php:internal
+cfn=php::time
+calls=1 0 0
+86 1
+cfl=php:internal
+cfn=php::gmdate
+calls=1 0 0
+86 11
+cfl=php:internal
+cfn=php::header
+calls=1 0 0
+86 6
+cfl=php:internal
+cfn=php::header
+calls=1 0 0
+87 1
+cfl=php:internal
+cfn=php::header
+calls=1 0 0
+88 3
+cfl=php:internal
+cfn=php::header
+calls=1 0 0
+89 5
+cfl=php:internal
+cfn=php::gmdate
+calls=1 0 0
+91 10
+cfl=php:internal
+cfn=php::header
+calls=1 0 0
+91 4
+
+fl=/var/www/lib/javascript.php
+fn={main}
+
+summary: 4177
+
+1 1066
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+27 7
+cfl=php:internal
+cfn=php::define
+calls=1 0 0
+30 0
+cfl=/var/www/config.php
+cfn=require::/var/www/config.php
+calls=1 0 0
+31 2679
+cfl=/var/www/lib/jslib.php
+cfn=require_once::/var/www/lib/jslib.php
+calls=1 0 0
+32 5
+cfl=/var/www/lib/configonlylib.php
+cfn=min_get_slash_argument
+calls=1 0 0
+34 77
+cfl=php:internal
+cfn=php::ltrim
+calls=1 0 0
+35 1
+cfl=php:internal
+cfn=php::substr_count
+calls=1 0 0
+36 1
+cfl=php:internal
+cfn=php::explode
+calls=1 0 0
+40 4
+cfl=/var/www/lib/configonlylib.php
+cfn=min_clean_param
+calls=1 0 0
+41 6
+cfl=/var/www/lib/configonlylib.php
+cfn=min_clean_param
+calls=1 0 0
+42 66
+cfl=php:internal
+cfn=php::explode
+calls=1 0 0
+51 2
+cfl=php:internal
+cfn=php::realpath
+calls=1 0 0
+53 7
+cfl=php:internal
+cfn=php::strpos
+calls=1 0 0
+62 0
+cfl=php:internal
+cfn=php::substr
+calls=1 0 0
+66 2
+cfl=php:internal
+cfn=php::implode
+calls=1 0 0
+78 1
+cfl=php:internal
+cfn=php::sha1
+calls=1 0 0
+78 6
+cfl=php:internal
+cfn=php::file_exists
+calls=1 0 0
+82 6
+cfl=php:internal
+cfn=php::filemtime
+calls=1 0 0
+86 6
+cfl=/var/www/lib/jslib.php
+cfn=js_send_unmodified
+calls=1 0 0
+86 224
+

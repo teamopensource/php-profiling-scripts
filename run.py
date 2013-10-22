@@ -8,7 +8,7 @@ import os
 
 parser = argparse.ArgumentParser(description='Make awesome graphs')
 
-parser.add_argument('--type', default="accumulation", choices=["accumulation"], help="type of visualization")
+parser.add_argument('--type', default="development", choices=["development", "accumulation"], help="type of visualization")
 parser.add_argument('--cap', default="0", help="exclude function calls below this threshold (microseconds)")
 parser.add_argument('--i', default=".", help="input directory containing the cachegrind files")
 parser.add_argument('--o', default=".", help="output directory to generate the diagram into")
@@ -27,4 +27,13 @@ subprocess.call(["python", "./conversion/k-to-csv.py", "--i", args.i, "--cap", a
 
 print "### VISUALIZATION ###"
 
-subprocess.call(["Rscript", "./visualization/" + args.type + ".r", args.o] + glob.glob(args.i + "/cachegrind.*.csv"))
+all_files = glob.glob(args.i + "/cachegrind.*.csv")
+set_files = set([])
+
+for filename in all_files:
+	set_files.add('.'.join(filename.split('.')[:-2]))
+
+for filename in set_files:
+	#print filename + '.*.csv'
+	#print ["Rscript", "./visualization/" + args.type + ".r", args.o, filename] + glob.glob(args.i + '/' + filename + '.*.csv')
+	subprocess.call(["Rscript", "./visualization/" + args.type + ".r", args.o, filename] + glob.glob(filename + '.*.csv'))

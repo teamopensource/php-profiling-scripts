@@ -1,14 +1,7 @@
 args <- commandArgs()
 
 dir <- args[6]
-filename <- args[7]
-files <- args[-(1:7)]
-
-print(files)
-
-files <- sort(files)
-
-print(files)
+files <- args[-(1:6)]
 
 cols <- c("fl", "fn", "li", "tm")
 
@@ -23,14 +16,9 @@ for(file in files) {
 	colnames(rows) <- cols
 
 	fns <- unique(rows[, "fn"])
-	
+
 	ticks <- ticks + 1
-
-	# timestamp <- strsplit(file, "\\.")[[1]]
-	# timestamp <- timestamp[length(timestamp)-1]
-
-	# timestamp_map[ticks] <- timestamp
-
+	
 	for(name in fns) {
 		names[name] <- name
 		
@@ -46,14 +34,11 @@ for(file in files) {
 }
 
 # dev.new(width=16, height=10)
-svg(gsub("%", "_", paste(filename, "accumulation.svg", sep=".")), width=16, height=10)
-
-timestamps <- c(0, ticks)
-microseconds <- c(0, max)
+svg(paste(dir, "accumulation.svg", sep="/"), width=16, height=10)
 
 plot(
-	timestamps,
-	microseconds,
+	c(0, ticks),
+	c(0, max),
 	type="n"
 )
 
@@ -61,9 +46,9 @@ for(name in names) {
 	x <- c()
 	y <- c()
 
-	for(tick in 1:ticks) {
-		x <- c(x, tick)
-		y <- c(y, sums[paste(name, tick)])
+	for(t in 1:ticks) {
+		x <- c(x, t)
+		y <- c(y, sums[paste(name, t)])
 	}
 
 	color <- rgb(runif(5), runif(5), runif(5))

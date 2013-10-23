@@ -27,7 +27,8 @@ for(file in files) {
 
 	timestamp <- strsplit(file, "\\.")[[1]]
 	timestamp <- timestamp[length(timestamp)-1]
-	timestamp <- as.numeric(timestamp)
+	timestamp <- gsub("_", "\\.", timestamp)
+	timestamp <- as.double(timestamp)
 
 	if (first == 0) {
 		t <- 0

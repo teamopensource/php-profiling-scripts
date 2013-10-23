@@ -8,7 +8,7 @@ import os
 
 parser = argparse.ArgumentParser(description='Make awesome graphs')
 
-parser.add_argument('--type', default="development", choices=["development", "accumulation"], help="type of visualization")
+parser.add_argument('--type', default="accumulation", choices=["development", "accumulation"], help="type of visualization")
 parser.add_argument('--cap', default="0", help="exclude function calls below this threshold (microseconds)")
 parser.add_argument('--i', default=".", help="input directory containing the cachegrind files")
 parser.add_argument('--o', default=".", help="output directory to generate the diagram into")
